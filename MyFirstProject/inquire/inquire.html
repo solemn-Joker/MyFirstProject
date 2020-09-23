@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        .yjdjfm {
+            width: 900px;
+            min-height: 580px;
+            margin: 0 auto;
+            border: 1px solid #f1ecec;
+            margin-top: 5px;
+        }
+
+            .yjdjfm ul {
+                width: 430px;
+                text-align: left;
+            }
+
+                .yjdjfm ul li {
+                    width: 420px;
+                    line-height: 35px;
+                    height: 35px;
+                    margin-bottom: 5px;
+                    margin-left: 10px;
+                }
+
+                    .yjdjfm ul li span {
+                        width: 50px;
+                        text-align: right;
+                        line-height: 35px;
+                        height: 35px;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    .yjdjfm ul li input {
+                        width: 200px;
+                        line-height: 25px;
+                        height: 25px;
+                        font-size: 14px;
+                        border: 1px solid #d0cfcf;
+                    }
+
+                    .yjdjfm ul li strong {
+                        color: red;
+                        width: 5px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: right;
+                        margin-left: 5px;
+                        font-size: 14px;
+                    }
+
+        .remarkk {
+            width: 800px;
+            text-align: left;
+            margin-left: 15px;
+        }
+
+        .remarktxt {
+            width: 670px;
+            line-height: 25px;
+            height: 50px;
+            font-size: 14px;
+            border: 1px solid #d0cfcf;
+        }
+
+        .remarkk span {
+            width: 50px;
+            text-align: right;
+            line-height: 35px;
+            height: 35px;
+            font-size: 14px;
+            font-weight: 600;
+            vertical-align: top;
+        }
+        /*按钮*/
+        .yjdjtjan {
+            display: inline-block;
+            margin: 0 0 0 5px;
+            padding: 10px 46px;
+            width: auto;
+            height: auto;
+            line-height: 20px;
+            color: #fff;
+            font-size: 14px;
+            border: 1px solid #93d1fe;
+            background: #93d1fe;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        /**仪检登记表格*/
+        .yjdjlist {
+            width: 900px;
+            margin-top: 10px;
+            display: none;
+        }
+
+            .yjdjlist table {
+                font-size: 12px;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+                .yjdjlist table tr {
+                    text-align: center;
+                }
+
+                    .yjdjlist table tr td {
+                        text-align: center;
+                        line-height: 20px;
+                        height: 25px;
+                        min-width: 80px;
+                        border: 1px solid #d0cfcf;
+                        word-wrap: break-word;
+                        word-break: break-all;
+                    }
+
+        #yjdjtrone {
+            background: rgb(202, 200, 212);
+            line-height: 40px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .pjtablecss {
+            background: #fbfafa;
+        }
+        /*控制样式*/
+        .xscss {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .addcss {
+            display: block;
+        }
+        /*仪检登记信息*/
+        .addyjall {
+            width: 500px;
+            height: 350px;
+            margin: 0 auto;
+            border: 1px solid rgb(130, 209, 248);
+            position: absolute;
+            left: 37%;
+            top: 20%;
+            z-index: 9999;
+            border-radius: 10px;
+            background: rgba(241, 250, 255, 0.86);
+            text-align: left;
+            display: none;
+        }
+
+        .addheard {
+            float: left;
+            width: 500px;
+            height: 60px;
+            border-bottom: 1px solid #cccccc;
+            position: relative;
+        }
+
+        .txttitle {
+            float: left;
+            margin-left: 20px;
+            color: #3273c2;
+            position: relative;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 60px;
+        }
+
+        .cleartit {
+            float: right;
+            margin-right: 20px;
+            line-height: 60px;
+            color: #3e87c1;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+            .cleartit:hover {
+                color: black;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+        .yjdjkk ul {
+            margin-left: 90px;
+        }
+
+            .yjdjkk ul li {
+                line-height: 40px;
+                margin-top: 5px;
+                list-style-type: none;
+            }
+
+                .yjdjkk ul li span {
+                    width: 80px;
+                    text-align: right;
+                    line-height: 25px;
+                }
+
+                .yjdjkk ul li input {
+                    width: 200px;
+                    line-height: 25px;
+                    border: 1px solid #cccccc;
+                    text-indent: 10px;
+                }
+
+                .yjdjkk ul li strong {
+                    color: red;
+                    width: 5px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: right;
+                    margin-left: 5px;
+                    font-size: 14px;
+                }
+
+                .yjdjkk ul li input:hover {
+                    border: 1px solid #bcf3c2;
+                }
+
+        .remarktxt {
+            width: 200px;
+            height: 50px;
+            line-height: 25px;
+            border: 1px solid #cccccc;
+            text-indent: 10px;
+        }
+
+        .yjaddbtn {
+            border-radius: 10px;
+            background: #53abda;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            width: 150px;
+            line-height: 30px;
+            height: 40px;
+            margin-left: 170px;
+        }
+
+            .yjaddbtn:hover {
+                border-radius: 10px;
+            }
+        /*表格中的超链接*/
+        .tablecljaedit {
+            list-style: none;
+            font-size: 12px;
+            font-weight: 600;
+            color: #072af7;
+        }
+
+            .tablecljaedit:hover {
+                cursor: pointer;
+            }
+
+        .tablecljadel {
+            list-style: none;
+            font-size: 12px;
+            font-weight: 600;
+            color: #072af7;
+        }
+
+            .tablecljadel:hover {
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <div id="addyjdjallid" class="addyjall">
+        <div class="addheard">
+            <span class="txttitle">仪器信息登记</span>
+            <span class="cleartit" title="关闭窗口" onClick="deleteadd()">X</span>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="yjdjkk">
+            <ul>
+                <li>
+                    <span>仪器名称：</span><input maxlength="10" size="10" placeholder="请输入仪器名称" id="txtyjneme" name="txtyjneme" type="text" />
+                    <strong>*</strong><i class="yz_name" style="display:none; color:red;">-->请填写仪器名称^_^</i>
+                </li>
+                <li>
+                    <span>型号规格：</span><input maxlength="10" size="10" placeholder="请输入型号规格" id="txtyjxh" name="txtyjxh" type="text" />
+                    <strong>*</strong><i class="yz_xh" style="display:none; color:red;">-->请填写规格型号^_^</i>
+                </li>
+                <li>
+                    <span>出厂编号：</span><input maxlength="12" size="12" placeholder="请输入出厂编号" id="txtyjnumber" name="txtyjnumber" type="text" />
+                    <strong>*</strong><i class="yz_bh" style="display:none; color:red;">-->请填写出厂编号^_^</i>
+                </li>
+                <li>
+                    <span style="vertical-align:top; margin-left:25px;">说明：</span><textarea class="remarktxt" id="txtyjremark" name="txtyjremark" value=""></textarea>
+                </li>
+            </ul>
+        </div>
+        <input class="yjaddbtn" id="btnyjaddrecord" value="" type="submit" />
+    </div>
+    <!--仪检登记信息-->
+    <div style="clear:both;"></div>
+    <div class="yjdjfm">
+        <div class="yjdjfd">
+            <ul>
+                <li><span>公司名称：</span><input maxlength="15" size="15" id="txtyjcomname" name="txtyjcomname" type="text" value="" /><strong>*</strong><i class="yz_comname" style="display:none; color:red;">-->请填写公司名称^_^</i></li>
+                <li><span>登 记  人：</span><input maxlength="4" size="4" id="txtyjperson" name="txtyjperson" type="text" value="" /><strong>*</strong><i class="yz_person" style="display:none; color:red;">-->请填写您的姓名^_^</i></li>
+            </ul>
+            <ul style="float:right; margin-top:-80px;">
+                <li><span>联系电话：</span><input maxlength="11" size="11" id="txtyjphone" name="txtyjphone" type="number" value="" /><strong>*</strong><i class="yz_phone" style="display:none; color:red;">-->手机号码11位哦^_^</i></li>
+            </ul>
+
+        </div>
+        <button class="yjdjtjan" id="btntj">添加记录</button>
+
+        <div style="clear:both;"></div>
+
+
+        <div id="yjdjlistidd" class="yjdjlist">
+            <table class="tabyzhhh" id="tttab">
+                <tr id="yjdjtrone">
+                    <td style="display:none;">唯一编号</td>
+                    <td style="max-width:50px;">序号</td>
+                    <td>仪检名称</td>
+                    <td>规格型号</td>
+                    <td>出厂编号</td>
+                    <td>登记日期</td>
+                    <td>公司名称</td>
+                    <td>登 记  人</td>
+                    <td>联系电话</td>
+                    <td>说明</td>
+                    <td style="min-width:80px;">操作</td>
+                </tr>
+            </table>
+        </div>
+        <div style="margin-top:5px; text-align:left;" id="TSbiaoyu"></div>
+    </div>
+</body>
+</html>
